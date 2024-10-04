@@ -1,0 +1,510 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    width: 100%;
+    background-color: white;
+    
+}
+/* encabezado pagina uno */
+header{
+    width: 100%;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo h1{
+    font-size: 30px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+}
+.enlacesHeader{
+ display: flex;
+ gap: 37px;
+ font-weight: 700;
+}
+.enlaces{
+    color:#537459;
+    font-family:'Monserrat', sans-serif;
+}
+.formularioHeader{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Buscar{
+    width: 180px;
+    height: 38px;
+}
+.inicioSesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:500;
+    font-family:'Monserrat', sans-serif;
+    width: 181px;
+    height: 42px;
+    background-color: #537459;
+    color: white;
+    border-radius:30px;
+}
+.imgMenu{
+    width: 24px;
+    height: 32px;
+}
+
+ .menu-lateral{
+    position: relative;
+    top: 0;
+
+} 
+.menu-lateral label{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  .menu-lateral input {
+    display: none;
+  }
+  .menu-lateral nav{
+    display: flex;
+    flex-direction: column;
+    /* width: 300px;
+    height:1200px;
+    background-color: black;
+    opacity: 0.8;
+    border: solid 1px; */
+  }
+  .menu-lateral input:checked~nav{
+    width: 300px;
+    height:1200px;
+    background-color:black;
+    opacity: 0.8;
+  }
+
+/* main principal*/
+.primer_main{
+    width: 100%;
+    height: 500px;
+    background-color: #6b856d;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+
+
+
+
+}
+
+.text {
+    max-width: 60%;
+    font-size: 26px;
+    position: relative;
+    bottom: 50px;
+    margin: 100px;
+
+}
+.parrafo{
+    max-width: 60%;
+    position: relative;
+    top: 30px;
+    font-size: 26px;
+
+
+    
+}
+
+
+
+.imagensita{
+    max-width: 50%;
+    height: 95%;
+    position: relative;
+    top: 42px;
+
+}
+
+
+
+
+.primer_boton{
+    
+    width: auto;
+    height: 40px;
+    background-color: white;
+    color:#6b856d;
+    border-radius: 80px;
+    position: relative;
+    top: 60px;
+    
+}
+
+
+/*slider*/
+
+.main_pequeño{
+    width: 100%;
+    height: 80px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e5e5e5;
+
+}
+
+.circulos {
+    display: flex;
+    gap: 10px; /* Espacio entre los círculos */
+}
+
+.circulo {
+    width: 30px; /*  círculo */
+    height: 30px; /* Diámetro del círculo */
+    background-color: white; /* Color del círculo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+}
+.circulo2 {
+    width: 30px; /* Diámetro del círculo */
+    height: 30px; /* Diámetro del círculo */
+    background-color: white; /* Color del círculo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+}
+.circulo3 {
+    width: 30px; /* Diámetro del círculo */
+    height: 30px; /* Diámetro del círculo */
+    background-color: white; /* Color del círculo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+}
+
+
+/*main pequeño dos*/
+
+
+.main_pequeño_dos{
+
+    background-color:#6b856d;
+    color: white;
+    width:100% ;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+
+    
+
+
+
+
+}
+
+
+
+.texto_mpq{
+    font-size:30px ;
+    position: relative;
+    left: 120px;
+
+
+
+
+}
+
+.texto2_mpq{
+
+    position: relative;
+
+    top: 130px;
+    right: 170px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* main dos tarjetas de credito */
+
+
+
+
+
+
+
+
+.main_dos{
+    
+
+    width: 100%;
+    height: 1000px;
+    background-color: #6b856d;
+    position: relative;
+    bottom: 60px;
+
+
+
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+
+    position: relative;
+
+    top: 150px;
+    
+
+
+   
+}
+
+.card1 {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 600px;
+    gap: 10px;
+    
+}
+
+.tarjeta{
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 600px;
+    right: 20px;
+    top: 90px;
+    gap: 10px;
+    
+    
+}
+.card3{
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: relative;
+    transition: transform 0.2s;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 600px;
+    right: 40px;
+    top: 200px;
+    gap: 10px;
+
+}
+
+
+
+
+
+  
+
+
+
+
+/* Pie de pagina*/
+.Pie-pagina{
+    width: 100%;
+    height: 432px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 70px;
+}
+.nav-pie-pag{
+    width: 100%;
+    height: 229px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:60px;
+}
+.nav-pie-pag div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-bottom: 50px;
+    border-bottom:solid 1px white;
+}
+.nav-pie-pag h1{
+    font-size:20px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    margin-bottom: 30px;
+}
+.nav-pie-pag a{
+    color: white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+}
+.redes-pie-pag{
+    width:90%;
+    height:90%;
+    align-items: first baseline;
+    display: flex;
+    justify-content: space-between;
+}
+.red-social-pie-pag{
+    display: flex;
+    gap: 20px;
+}
+.red-social-pie-pag img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+    width: 100%;
+    height: 214px;
+    gap: 30px;
+    padding: 30px;
+
+    
+}
+
+button {
+    color: white;
+    border: solid;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el botón y la línea */
+    width: 60px; /* Asegura que ocupe todo el ancho del contenedor */
+}
+
+button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color:#6b856d; /* Color del texto */
+    padding: 10px 15px;
+    font-size: 17px; /* Tamaño de fuente */
+    cursor: pointer;
+    transition: color 0.3s; /* Transición para el efecto */
+    margin-bottom: 2px; /* Espacio entre el botón y la línea */
+    display: flex;
+    width: 203px;
+    height: 26px;
+    
+}
+
+button:hover {
+    color: white; /* Color al pasar el mouse */
+}
+
+.linea {
+    width: 118px; /* Ancho completo */
+    height: 2px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    position: relative;
+    right: 30px;
+
+    
+
+}
+

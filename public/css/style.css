@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+width: 100%;
+background-color: white;
+}
+/* encabezado pagina uno */
+header{
+    width: 100%;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo h1{
+    font-size: 30px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+}
+.enlacesHeader{
+ display: flex;
+ gap: 37px;
+ font-weight: 700;
+}
+.enlaces{
+    color:#537459;
+    font-family:'Monserrat', sans-serif;
+}
+.formularioHeader{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Buscar{
+    width: 180px;
+    height: 38px;
+}
+.inicioSesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:500;
+    font-family:'Monserrat', sans-serif;
+    width: 181px;
+    height: 42px;
+    background-color: #537459;
+    color: white;
+    border-radius:30px;
+}
+.imgMenu{
+    width: 24px;
+    height: 32px;
+}
+
+ .menu-lateral{
+    position: relative;
+    top: 0;
+
+} 
+.menu-lateral label{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  .menu-lateral input {
+    display: none;
+  }
+  .menu-lateral nav{
+    display: flex;
+    flex-direction: column;
+    /* width: 300px;
+    height:1200px;
+    background-color: black;
+    opacity: 0.8;
+    border: solid 1px; */
+  }
+  .menu-lateral input:checked~nav{
+    width: 300px;
+    height:1200px;
+    background-color:black;
+    opacity: 0.8;
+  }
+  /* Contenido principal pagina uno */
+.mainUno{
+    width: 100%;
+    height: 905px;
+    background-color: #537459;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.imgMainUno{
+    width: 50%;
+    height: 905px; 
+}
+.textoMain{
+    width:50%;
+}
+.subtitulo{
+    font-size: 25px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    margin-left: 30px;
+}
+.titulo{
+    font-size: 50px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align:left;
+    margin:20px 80px 30px 30px;
+}
+.parrafo{
+    font-size:20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align:left;
+    margin:20px 80px 30px 30px;
+}
+.Servicios{
+    width: 470px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align:unset;
+    margin-left:5%;
+}
+.servicioLink{
+    text-decoration: none;
+    color: white;
+    font-size:22px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    margin-left: 30px;
+}
+.AbrirCuenta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+    width: 352px;
+    height: 86px;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius:50px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left:20%;
+}
+.AbrirCuenta:hover{
+    background-color:#537459;
+    color:white;
+    border: solid 1px white;
+}
+/* pagina dos */
+.pag-2{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.iconos-servicios{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-pag-2{
+    width: 30%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.iconos-servicios:hover{
+    transition:1s;
+    transform: translateX(-100px);
+}
+.img-pag-2 a{
+    text-decoration: none;
+    font-family:'Monserrat', sans-serif;
+    font-weight:700;
+    font-size: 22px;
+    color: #537459;
+    text-align: center;
+    margin: 5px;
+}
+.icono{
+    width: 120px;
+    height: 120px;
+}
+.img-grande-pag-2{
+    width: 35%;
+    height:80%;
+    position: relative;
+    top:78px;
+}
+.img-grande-pag-2:hover{
+    transition:1s;
+    transform: translateX(200px);
+}
+.pag-2 h1{
+    font-family:'Monserrat', sans-serif;
+    font-weight:700;
+    font-size: 50px;
+    margin-top: 40px;
+    text-align:left;
+}
+.pag-2 h1:hover{
+    transition:1s;
+    transform:translateX(-200px);
+}
+/* pagina tres */
+.pag-3{
+    width: 100%;
+    height: 500px;
+    background-color: #537459;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px white;
+}
+.pag-3 section img{
+    margin-top:16%;
+}
+.pag-3 section img:hover{
+    transition:1s;
+    transform: translateX(-100px);
+}
+.texto-pag-3{
+    width: 60%;
+    height:80% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto-pag-3 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-pag-3:hover{
+    transition:1s;
+    transform: translateX(100px);
+}
+.pag-3 h1{
+    font-size: 50px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align:center;
+    margin-left:30px;
+    margin-right:80px;
+}
+.pag-3 P{
+    font-size:20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align:justify;
+    margin-left:30px;
+    margin-right:80px;
+}
+.boton-tarjeta-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    height: 62px;
+    background-color:#537459;
+    color:white;
+    border: solid 1px white;
+    border-radius:10px;
+    font-family:'Monserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.boton-tarjeta-1:hover{
+    background-color:white;
+    color:#537459;
+    border: solid 1px #537459;
+}
+.boton-tarjeta-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    height: 62px;
+    background-color:white;
+    color:#537459;
+    border: solid 1px white;
+    border-radius:10px;
+    font-family:'Monserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.boton-tarjeta-2:hover{
+    background-color:#537459;
+    color:white;
+    border: solid 1px white;
+}
+/* pagina cuatro */
+.pag-4{
+    width: 100%;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pag-4 div{
+    width: 100%;
+    height: 40%;
+    background-color: #537459;
+    position: absolute;
+    z-index: 1;
+}
+.pag-4 img{
+    width: 1000px;
+    height: 743px;
+    border-radius: 15px;
+    position: relative;
+    top:97px;
+    z-index: 2;
+}
+.pag-4 img:hover{
+    transition:1s;
+    transform: translateX(100px);
+}
+.pag-4 section{
+    width: 513px;
+    height:372px;
+    background-color: white;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+    gap:30px;
+    position:relative;
+    bottom:150px;
+    right:270px;
+    z-index: 3;
+}
+.pag-4 section h2{
+    font-size: 30px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align:center;
+}
+.pag-4 section p{
+    font-size: 20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align:justify;
+    margin: 0 20px 0 20px;
+}
+.pag-4 section a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    height: 62px;
+    background-color:#537459;
+    color:white;
+    border: solid 1px white;
+    border-radius:10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family:'Monserrat', sans-serif;
+}
+.pag-4 section button:hover{
+    background-color:white;
+    color:#537459;
+    border: solid 1px #537459;
+}
+/* pagina cinco */
+.pag-5{
+    width:100%;
+    height: 900px;
+    background-color: #537459;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pag-5 div{
+    width: 50%;
+    height: 80%;
+}
+.texto-pag-5 h1{
+    font-size: 50px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align:center;
+    margin-left:30px;
+    margin-right:80px;
+    margin-bottom: 60px;
+}
+.texto-pag-5 h2{
+    font-size: 30px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align:center;
+    margin: 15px 80px 15px 50px;
+}
+.texto-pag-5 p{
+    font-size:20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align:justify;
+    margin: 15px 80px 15px 50px;
+}
+.img-pag-5 img{
+    width: 95%;
+    height: 100%;
+    margin-top: 25px;
+}
+/* pagina seis */
+.pag-6{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px white;
+}
+.mitad-pag-6{
+    width:100%;
+    height:50%;
+    background-color: #537459;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+.mitad-pag-6 h1{
+    font-size: 40px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    margin-top:40px;
+}
+.contenedor-coment-pag-6{
+    width:1033px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+}
+.comentario-pag-6{
+    width:30%;
+    height:80%;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    border-radius:20px;
+    border: solid 1px grey;
+}
+.comentario-pag-6 {
+    position: relative;
+    top:90px;
+    z-index: 2;
+}
+.comentario-pag-6 p{
+    width: 80%;
+    font-size:20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align:justify;
+    color: grey;
+}
+.comentario-pag-6 h2{
+    width: 80%;
+    font-size:20px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align:center;
+    color: grey;
+}
+.viñeta-coment-pag-6{
+    width: 64px;
+    height: 64px;
+    margin-right:70%;
+} 
+.img-coment-pag-6{
+    width: 109px;
+    height: 109px;
+    border: solid 1px transparent;
+    border-radius:60px ;
+}
+/* pagina siete */
+.pag-7{
+    width: 100%;
+    height: 609px;
+}
+.invertir-pag-7{
+    width:70%;
+    height: 387px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left:50px; 
+}
+.invertir-pag-7 section{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: solid 1px grey;
+}
+.invertir-pag-7 h1{
+    font-size:70px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+}
+.invertir-pag-7 p{
+    width: 80%;
+    margin: 30px;
+    font-size:20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align:justify;
+}
+.cincuenta-pag-7{
+    background-color:#537459;
+    color: white;
+}
+.doscientos-pag-7{
+    background-color: #729578;
+    color: white;
+}
+.veinte-pag-7{
+    background-color: whitesmoke;
+}
+.acciones-pag-7 h1{
+    width: 50%;
+    font-size:30px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    margin:40px
+}
+/* pagina ocho*/
+.pag-8{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pag-8 img{
+    width: 50%;
+    height: 90%;
+}
+.pag-8 img:hover{
+    transition: 1s;
+    transform:translateX(-100px);
+}
+.pag-8 div{
+    width: 50%;
+    height: 100%;
+}
+.pag-8 div:hover{
+    transition: 1s;
+    transform:translateX(100px);
+}
+.pag-8 div h1{
+    width:80%;
+    font-size:48px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align: center;
+    margin:40px
+}
+.pag-8 div p{
+    width:80%;
+    font-size:20px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+    text-align: justify;
+    margin:50px
+}
+.boton-pag-8{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    margin: 0 190px 0 190px
+}
+.buscar-pag-8{
+    width: 208px;
+    height: 46px;
+    background-color:white;
+    color:#537459;
+    border: solid 1px #537459;
+    border-radius:30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.solicitar-pag-8{
+    width: 208px;
+    height: 46px;
+    background-color:#537459;
+    color:white;
+    border: solid 1px #537459;
+    border-radius:30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* pagina nueve */
+.pag-9{
+    width: 100%;
+    height: 657px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pag-9 img{
+    width: 50%;
+    height: 100%;
+}
+.form-pag-9{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-pag-9 label{
+    color: #537459;
+    font-size:36px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    text-align: center;
+}
+.form-pag-9 fieldset{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    border: transparent;
+    gap:15px;
+}
+.form-pag-9 span{
+    font-size:15px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+}
+.form-pag-9 input{
+    width: 100%;
+    border: solid 1px transparent;
+    border-bottom: solid 1px;
+}
+.form-pag-9 textarea{
+    width: 100%;
+    height: 100px;
+    border:solid 1px transparent;
+    border-bottom: solid 1px;
+}
+.Check-pag-9 input{
+    position: relative;
+    right: 100px;
+}
+.Check-pag-9 span{
+    position: relative;
+    bottom:20px;
+    left:30px;
+}
+.boton-pag-9{
+    width: 208px;
+    height: 46px;
+    background-color:#537459;
+    color:white;
+    border: solid 1px #537459;
+    border-radius:5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* Pie de pagina*/
+.Pie-pagina{
+    width: 100%;
+    height: 432px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-pie-pag{
+    width: 100%;
+    height: 229px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:60px;
+}
+.nav-pie-pag div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-bottom: 50px;
+    border-bottom:solid 1px white;
+}
+.nav-pie-pag h1{
+    font-size:20px;
+    font-weight:700;
+    font-family:'Monserrat', sans-serif;
+    margin-bottom: 30px;
+}
+.nav-pie-pag a{
+    color: white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:400;
+    font-family:'Monserrat', sans-serif;
+}
+.redes-pie-pag{
+    width:90%;
+    height:90%;
+    align-items: first baseline;
+    display: flex;
+    justify-content: space-between;
+}
+.red-social-pie-pag{
+    display: flex;
+    gap: 20px;
+}
+.red-social-pie-pag img{
+    width: 30px;
+    height: 30px;
+}
