@@ -13,11 +13,13 @@
   --green-light: #729578;
   --white: white;
 }
+
 body {
   width: 100%;
   background-color: var(--white);
 }
-/* encabezado pagina uno */
+
+/* Inicio del Header */
 header {
   width: 100%;
   height: 100px;
@@ -57,143 +59,120 @@ header {
 }
 
 .header-navbar_login {
-    width: 170px;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--green-light);
+  width: 170px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--green-light);
 }
 
 .header-navbar_login:hover {
-    background-color: var(--green);
-    cursor: pointer;
+  background-color: var(--green);
+  cursor: pointer;
 }
 
 .header-navbar_login a {
-    color: var(--white);
-    font-weight: 700;
-}
-
-/* .logo {
-  width: 30%;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo h1 {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-}
-.enlacesHeader {
-  display: flex;
-  gap: 37px;
+  color: var(--white);
   font-weight: 700;
 }
-.enlaces {
-  color: #537459;
-  font-family: "Monserrat", sans-serif;
-}
-.formularioHeader {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.Buscar {
-  width: 180px;
-  height: 38px;
-}
-.inicioSesion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Monserrat", sans-serif;
-  width: 181px;
-  height: 42px;
-  background-color: #537459;
-  color: white;
-  border-radius: 30px;
-} */
+/* Fin del header */
 
-/* Contenido principal pagina uno */
-.mainUno {
+/* inicio del main*/
+main {
+  display: flex;
   width: 100%;
-  height: 905px;
-  background-color: #537459;
-  color: white;
+  height: 900px;
+}
+
+main img {
+  width: 50%;
+}
+
+.main-contenedor {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-.imgMainUno {
   width: 50%;
-  height: 905px;
+  background-color: var(--green);
+  gap: 50px;
 }
-.textoMain {
-  width: 50%;
+
+.main-contenido, .main-servicios {
+  width: 100%;
+  height: 200px;
+  /* background-color: aliceblue; */
 }
-.subtitulo {
-  font-size: 25px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  margin-left: 30px;
+
+.main-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 50px;
+  color: var(--white);
 }
-.titulo {
-  font-size: 50px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: left;
-  margin: 20px 80px 30px 30px;
-}
-.parrafo {
+
+.main-contenido h2 {
   font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: left;
-  margin: 20px 80px 30px 30px;
 }
-.Servicios {
-  width: 470px;
-  height: 140px;
+
+.main-contenido h1 {
+  width: 90%;
+  font-size: 50px;
+}
+
+.main-contenido p {
+  width: 90%;
+  font-size: 18px;
+}
+
+.main-servicios {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
-  text-align: unset;
-  margin-left: 5%;
 }
-.servicioLink {
-  text-decoration: none;
-  color: white;
-  font-size: 22px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  margin-left: 30px;
-}
-.AbrirCuenta {
+
+.main-enlaces {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+} 
+
+.main-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  width: 352px;
-  height: 86px;
-  background-color: white;
-  color: black;
-  border: solid 1px black;
-  border-radius: 50px;
-  font-size: 14px;
+  gap: 5px;
+  height: 100px;
+}
+
+.main-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-logo a {
+  color: var(--white);
   font-weight: 700;
-  margin-left: 20%;
 }
-.AbrirCuenta:hover {
-  background-color: #537459;
-  color: white;
-  border: solid 1px white;
+
+.main-button {
+  width: 40%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
 }
-/* pagina dos */
+
+.main-button a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green);
+}
+/* Fin del main */
+
+
 .pag-2 {
   width: 100%;
   height: 800px;
