@@ -12,6 +12,7 @@
   --green: #537459;
   --green-light: #729578;
   --white: white;
+  --black: black;
 }
 
 body {
@@ -40,7 +41,7 @@ header {
 }
 
 .header-enlaces a {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--green);
   cursor: pointer;
@@ -48,14 +49,14 @@ header {
 
 .header-navbar {
   display: flex;
-  gap: 60px;
+  gap: 50px;
 }
 
 .header-navbar input {
   height: 40px;
   border-radius: 20px;
   border: 1px solid var(--green);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .header-navbar_login {
@@ -172,7 +173,6 @@ main img {
 }
 /* Fin del main */
 
-
 /* Inicio de productos */
 .productos {
   width: 100%;
@@ -252,7 +252,6 @@ main img {
   background-color: var(--green);
   width: 100%;
   height: 500px;
-  margin-bottom: 5pc;
 }
 
 .tarjetas img {
@@ -272,11 +271,11 @@ main img {
 
 .tarjetas-contenido h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: var(--white);
 }
 
-.tarjetas-contenido p{
+.tarjetas-contenido p {
   text-align: center;
   font-size: 20px;
   width: 60%;
@@ -303,98 +302,91 @@ main img {
 }
 /* fin tarjetas */
 
-/* .pag-3 {
+.empresa {
   width: 100%;
-  height: 500px;
-  background-color: #537459;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 2px white;
-}
-.pag-3 section img {
-  margin-top: 16%;
-}
-.pag-3 section img:hover {
-  transition: 1s;
-  transform: translateX(-100px);
-}
-.texto-pag-3 {
-  width: 60%;
-  height: 80%;
+  height: 900px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.empresa-white {
+  width: 100%;
+  height: 450px;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.empresa-contenedor {
+  background-image: url(../img/rytyy.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 600px; /* Adjusted to match the height of .empresa-white and .empresa-green */
+  position: absolute;
+  top: 112.5px; /* Quarter of .empresa-white height */
+  border-radius: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: center; 
   align-items: center;
 }
-.texto-pag-3 div {
+
+.empresa-contenido {
+  width: 40%;
+  height: 35%;
+  background-color: white;
+  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
-.texto-pag-3:hover {
-  transition: 1s;
-  transform: translateX(100px);
-}
-.pag-3 h1 {
-  font-size: 50px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: center;
-  margin-left: 30px;
-  margin-right: 80px;
-}
-.pag-3 P {
+
+.empresa-contenido h2 {
   font-size: 20px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.empresa-contenido p {
+  font-size: 16px;
   font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-  margin-left: 30px;
-  margin-right: 80px;
+  color: var(--black);
+  text-align: center  ;
 }
-.boton-tarjeta-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 250px;
-  height: 62px;
-  background-color: #537459;
-  color: white;
-  border: solid 1px white;
+
+.empresa-contenido button {
+  width: 200px;
+  height: 40px;
+  background-color: var(--green);
+  border: none;
   border-radius: 10px;
-  font-family: "Monserrat", sans-serif;
-  font-size: 14px;
+}
+
+.empresa-contenido button a {
+  color: var(--white);
   font-weight: 700;
 }
-.boton-tarjeta-1:hover {
-  background-color: white;
-  color: #537459;
-  border: solid 1px #537459;
+
+.empresa-green {
+  width: 100%;
+  height: 450px;
+  background-color: var(--green);
+  z-index: 1;
+  position: relative;
+  top: -112.5px; /* Move up by quarter of .empresa-white height */
 }
-.boton-tarjeta-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 250px;
-  height: 62px;
-  background-color: white;
-  color: #537459;
-  border: solid 1px white;
-  border-radius: 10px;
-  font-family: "Monserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-.boton-tarjeta-2:hover {
-  background-color: #537459;
-  color: white;
-  border: solid 1px white;
-} */
+
 /* pagina cuatro */
-.pag-4 {
+/* .pag-4 {
   width: 100%;
   height: 880px;
   display: flex;
@@ -469,7 +461,8 @@ main img {
   background-color: white;
   color: #537459;
   border: solid 1px #537459;
-}
+} */
+
 /* pagina cinco */
 .pag-5 {
   width: 100%;
