@@ -455,7 +455,6 @@ main img {
 .clientes h1 {
   font-size: 40px;
   color: var(--green);
-
 }
 
 .clientes-contenedor {
@@ -476,6 +475,7 @@ main img {
   height: 400px;
   background-color: rgba(83, 116, 89, 0.5);
   border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .comentarios p {
@@ -503,126 +503,67 @@ main img {
 }
 /* fin clientes */
 
-/* pagina cuatro */
-/* .pag-4 {
+/* inicio inversiones */
+.inversiones {
   width: 100%;
-  height: 880px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.pag-4 div {
-  width: 100%;
-  height: 40%;
-  background-color: #537459;
-  position: absolute;
-  z-index: 1;
-}
-.pag-4 img {
-  width: 1000px;
-  height: 743px;
-  border-radius: 15px;
-  position: relative;
-  top: 97px;
-  z-index: 2;
-}
-.pag-4 img:hover {
-  transition: 1s;
-  transform: translateX(100px);
-}
-.pag-4 section {
-  width: 513px;
-  height: 372px;
-  background-color: white;
-  border: solid 1px transparent;
-  border-radius: 20px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
-  gap: 30px;
-  position: relative;
-  bottom: 150px;
-  right: 270px;
-  z-index: 3;
+  background-color: rgba(83, 116, 89, 0.3);
 }
-.pag-4 section h2 {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: center;
-}
-.pag-4 section p {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-  margin: 0 20px 0 20px;
-}
-.pag-4 section a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 250px;
-  height: 62px;
-  background-color: #537459;
-  color: white;
-  border: solid 1px white;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-}
-.pag-4 section button:hover {
-  background-color: white;
-  color: #537459;
-  border: solid 1px #537459;
-} */
 
-/* pagina cinco */
-.pag-5 {
-  width: 100%;
-  height: 900px;
-  background-color: #537459;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.inversiones h1 {
+  font-size: 30px;
+  color: var(--green);
 }
-.pag-5 div {
-  width: 50%;
+
+.inversiones-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
   height: 80%;
 }
-.texto-pag-5 h1 {
-  font-size: 50px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
+
+.inversiones-cartas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 30%;
+  height: 70%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.inversiones-cartas:nth-child(1) {
+  background-color: var(--green); 
+}
+
+.inversiones-cartas:nth-child(2) {
+  background-color: var(--green-light); 
+}
+
+.inversiones-cartas:nth-child(3) {
+  background-color: #A1B9A3;
+}
+
+.inversiones-cartas h2 {
+  font-size: 40px;
+  color: var(--white);
+}
+
+.inversiones-cartas p {
+  font-size: 16px;
+  color: var(--white);
+  width: 80%;
   text-align: center;
-  margin-left: 30px;
-  margin-right: 80px;
-  margin-bottom: 60px;
 }
-.texto-pag-5 h2 {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: center;
-  margin: 15px 80px 15px 50px;
-}
-.texto-pag-5 p {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-  margin: 15px 80px 15px 50px;
-}
-.img-pag-5 img {
-  width: 95%;
-  height: 100%;
-  margin-top: 25px;
-}
+/* fin inversiones */
+
 /* pagina seis */
 .pag-6 {
   width: 100%;
