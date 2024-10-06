@@ -567,139 +567,155 @@ main img {
 }
 /* fin inversiones */
 
-/* pagina seis */
-.pag-6 {
+/* inicio info */
+
+.info {
   width: 100%;
-  height: 700px;
+  height: 1300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px white;
 }
-.mitad-pag-6 {
-  width: 100%;
+
+.sucursales-contenedor {
+  display: flex;
+  width: 80%;
   height: 50%;
-  background-color: #537459;
-  color: white;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: 1;
-}
-.mitad-pag-6 h1 {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  margin-top: 40px;
-}
-.contenedor-coment-pag-6 {
-  width: 1033px;
-  height: 550px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  text-align: justify;
+  gap: 50px;
 }
-.comentario-pag-6 {
-  width: 30%;
-  height: 80%;
-  background-color: white;
+
+.sucursales-contenedor img {
+  width: 50%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.sucursales-contenido {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  border-radius: 20px;
-  border: solid 1px grey;
-}
-.comentario-pag-6 {
-  position: relative;
-  top: 90px;
-  z-index: 2;
-}
-.comentario-pag-6 p {
-  width: 80%;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-  color: grey;
-}
-.comentario-pag-6 h2 {
-  width: 80%;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: center;
-  color: grey;
-}
-.viñeta-coment-pag-6 {
-  width: 64px;
-  height: 64px;
-  margin-right: 70%;
-}
-.img-coment-pag-6 {
-  width: 109px;
-  height: 109px;
-  border: solid 1px transparent;
-  border-radius: 60px;
-}
-/* pagina siete */
-.pag-7 {
-  width: 100%;
-  height: 609px;
-}
-.invertir-pag-7 {
-  width: 70%;
-  height: 387px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  margin-left: 50px;
-}
-.invertir-pag-7 section {
-  width: 30%;
+  width: 50%;
   height: 100%;
+}
+
+.sucursales-contenido h1 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--green);
+}
+
+.sucursales-contenido p {
+  font-size: 20px;
+  text-align: justify;
+  color: var(--black);
+} 
+
+.sucursales-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sucursales-buttons button:nth-child(1) {
+  width: 200px;
+  height: 40px;
+  color: var(--white);
+  font-weight: 700;
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+}
+
+.sucursales-buttons button:nth-child(2) {
+  width: 200px;
+  height: 40px;
+  color: var(--green);
+  font-weight: 700;
+  background-color: var(--white);
+  border: 2px solid var(--green);
+  border-radius: 10px;
+}
+
+.contacto {
+  display: flex;
+  width: 80%;
+  height: 50%;
+  align-items: center;
+  gap: 50px;
+}
+
+.contacto img {
+  width: 50%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.contacto-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
-  border: solid 1px grey;
-}
-.invertir-pag-7 h1 {
-  font-size: 70px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-}
-.invertir-pag-7 p {
-  width: 80%;
-  margin: 30px;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-}
-.cincuenta-pag-7 {
-  background-color: #537459;
-  color: white;
-}
-.doscientos-pag-7 {
-  background-color: #729578;
-  color: white;
-}
-.veinte-pag-7 {
-  background-color: whitesmoke;
-}
-.acciones-pag-7 h1 {
+  gap: 20px;
   width: 50%;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  margin: 40px;
+  height: 100%;
 }
+
+.contacto-form h1 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--green);
+}
+
+fieldset {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: transparent;
+  gap: 15px;
+}
+
+.contacto-form input {
+  width: 100%;
+  border: solid 1px transparent;
+  border-bottom: solid 1px;
+}
+
+.contacto-form textarea {
+  width: 100%;
+  height: 100px;
+  border: solid 1px transparent;
+  border-bottom: solid 1px;
+}
+
+.contacto-check {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contacto-check input {
+  width: 20px;
+}
+
+.enviar-button {
+  width: 100%;
+  height: 40px;
+  color: var(--white);
+  font-weight: 700;
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+}
+
 /* pagina ocho*/
 .pag-8 {
   width: 100%;
