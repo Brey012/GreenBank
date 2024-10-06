@@ -198,8 +198,11 @@ main img {
 }
 
 .productos-contenedor img {
-  width: 40%;
-  height: 850px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .productos-contenido {
