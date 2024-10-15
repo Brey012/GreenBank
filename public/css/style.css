@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-border: none;
-outline: none;
-scroll-behavior: smooth;
-font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -24,8 +24,8 @@ body {
   overflow-x: hidden;
 }
 
-/* Inicio del Header */
-header {
+/* Header */
+.header {
   width: 100%;
   height: 100px;
   display: flex;
@@ -33,66 +33,65 @@ header {
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.header-enlaces {
+.header__links {
   display: flex;
   gap: 10px;
 }
 
-.header-enlaces a {
+.header__link {
   font-size: 16px;
   font-weight: 600;
   color: var(--green);
   cursor: pointer;
 }
 
-.header-navbar {
+.header__navbar {
   display: flex;
   gap: 50px;
 }
 
-.header-navbar input {
+.header__navbar-input {
   height: 40px;
   border-radius: 20px;
   border: 1px solid var(--green);
   font-size: 16px;
 }
 
-.header-navbar_login {
+.header__navbar-button {
   width: 170px;
   border-radius: 20px;
   border: none;
   background-color: var(--green-light);
 }
 
-.header-navbar_login:hover {
+.header__navbar-button:hover {
   background-color: var(--green);
   cursor: pointer;
 }
 
-.header-navbar_login a {
+.header__navbar-button a {
   color: var(--white);
   font-weight: 700;
 }
-/* Fin del header */
 
-/* inicio del main*/
-main {
+/* Main */
+.main {
   display: flex;
   width: 100%;
   height: 900px;
 }
 
-main img {
+.main__image {
   width: 50%;
 }
 
-.main-contenedor {
+.main__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,14 +101,13 @@ main img {
   gap: 50px;
 }
 
-.main-contenido,
-.main-servicios {
+.main__content,
+.main__services {
   width: 100%;
   height: 200px;
-  /* background-color: aliceblue; */
 }
 
-.main-contenido {
+.main__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -119,34 +117,34 @@ main img {
   color: var(--white);
 }
 
-.main-contenido h2 {
+.main__content-title {
   font-size: 20px;
 }
 
-.main-contenido h1 {
+.main__content-heading {
   width: 90%;
   font-size: 50px;
 }
 
-.main-contenido p {
+.main__content-text {
   width: 90%;
   font-size: 18px;
 }
 
-.main-servicios {
+.main__services {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main-enlaces {
+.main__links {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 40%;
 }
 
-.main-logo {
+.main__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,30 +152,30 @@ main img {
   height: 100px;
 }
 
-.main-logo img {
+.main__logo img {
   width: 50px;
   height: 50px;
 }
 
-.main-logo a {
+.main__logo a {
   color: var(--white);
   font-weight: 700;
 }
-.main-button {
+
+.main__button {
   width: 40%;
   height: 60px;
   border-radius: 30px;
   border: none;
 }
 
-.main-button a {
+.main__button a {
   font-size: 16px;
   font-weight: 600;
   color: var(--green);
 }
-/* Fin del main */
 
-/* Inicio de productos */
+/* Productos */
 .productos {
   width: 100%;
   height: 1000px;
@@ -187,13 +185,13 @@ main img {
   align-items: center;
 }
 
-.productos h1 {
+.productos__title {
   font-size: 45px;
   margin-top: 30px;
   color: var(--green);
 }
 
-.productos-contenedor {
+.productos__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -201,7 +199,7 @@ main img {
   height: 100%;
 }
 
-.productos-contenedor img {
+.productos__image {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -210,7 +208,7 @@ main img {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.9));
 }
 
-.productos-contenido {
+.productos__content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -221,7 +219,7 @@ main img {
   height: 550px;
 }
 
-.productos-item {
+.productos__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +228,7 @@ main img {
   text-align: center;
 }
 
-.productos-icon {
+.productos__icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -240,20 +238,19 @@ main img {
   margin-bottom: 10px;
 }
 
-.productos-icon img {
+.productos__icon img {
   width: 130px;
   height: 130px;
 }
 
-.productos-item p {
+.productos__item-text {
   margin: 0;
   color: var(--green);
   font-size: 20px;
   font-weight: 600;
 }
-/* Fin de productos */
 
-/* inicio tarjetas */
+/* Tarjetas */
 .tarjetas {
   display: flex;
   align-items: center;
@@ -262,7 +259,7 @@ main img {
   height: 500px;
 }
 
-.tarjetas img {
+.tarjetas__image {
   width: 50%;
   height: auto;
   max-height: 450px;
@@ -271,7 +268,7 @@ main img {
   filter: drop-shadow(0 0 10px rgba(44, 70, 48, 0.9));
 }
 
-.tarjetas-contenido {
+.tarjetas__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,26 +278,26 @@ main img {
   height: 100%;
 }
 
-.tarjetas-contenido h1 {
+.tarjetas__title {
   text-align: center;
   font-size: 40px;
   color: var(--white);
 }
 
-.tarjetas-contenido p {
+.tarjetas__text {
   text-align: center;
   font-size: 20px;
   width: 60%;
   color: var(--white);
 }
 
-.tarjetas-buttons {
+.tarjetas__buttons {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.tarjetas-buttons button {
+.tarjetas__button {
   width: 250px;
   height: 50px;
   background-color: transparent;
@@ -308,13 +305,12 @@ main img {
   border-radius: 5px;
 }
 
-.tarjetas-buttons button a {
+.tarjetas__button a {
   color: var(--white);
   font-weight: 600;
 }
-/* fin tarjetas */
 
-/* inicio empresa */
+/* Empresa */
 .empresa {
   width: 100%;
   height: 900px;
@@ -324,22 +320,22 @@ main img {
   position: relative;
 }
 
-.empresa-white {
+.empresa__white {
   width: 100%;
   height: 450px;
   background-color: var(--white);
   z-index: 1;
 }
 
-.empresa-contenedor {
+.empresa__container {
   background-image: url(../img/rytyy.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 80%;
-  height: 600px; /* Adjusted to match the height of .empresa-white and .empresa-green */
+  height: 600px;
   position: absolute;
-  top: 112.5px; /* Quarter of .empresa-white height */
+  top: 112.5px;
   border-radius: 20px;
   z-index: 2;
   display: flex;
@@ -347,7 +343,7 @@ main img {
   align-items: center;
 }
 
-.empresa-contenido {
+.empresa__content {
   width: 40%;
   height: 35%;
   background-color: white;
@@ -363,20 +359,20 @@ main img {
   left: 20px;
 }
 
-.empresa-contenido h2 {
+.empresa__content-title {
   font-size: 20px;
   font-weight: 700;
   color: var(--green);
 }
 
-.empresa-contenido p {
+.empresa__content-text {
   font-size: 16px;
   font-weight: 400;
   color: var(--black);
   text-align: center;
 }
 
-.empresa-contenido button {
+.empresa__content-button {
   width: 200px;
   height: 40px;
   background-color: var(--green);
@@ -384,22 +380,21 @@ main img {
   border-radius: 10px;
 }
 
-.empresa-contenido button a {
+.empresa__content-button a {
   color: var(--white);
   font-weight: 700;
 }
 
-.empresa-green {
+.empresa__green {
   width: 100%;
   height: 450px;
   background-color: var(--green);
   z-index: 1;
   position: relative;
-  top: -112.5px; /* Move up by quarter of .empresa-white height */
+  top: -112.5px;
 }
-/* fin empresa */
 
-/* inicio vivienda */
+/* Vivienda */
 .vivienda {
   width: 100%;
   height: 700px;
@@ -409,7 +404,7 @@ main img {
   justify-content: center;
 }
 
-.vivienda-contenedor {
+.vivienda__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -417,7 +412,7 @@ main img {
   height: 100%;
 }
 
-.vivienda-contenido {
+.vivienda__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -427,34 +422,33 @@ main img {
   height: 100%;
 }
 
-.vivienda-contenido h1 {
+.vivienda__content-title {
   font-size: 30px;
   color: var(--white);
 }
 
-.vivienda-contenido h2 {
+.vivienda__content-subtitle {
   font-size: 25px;
   color: var(--white);
 }
 
-.vivienda-contenido h3 {
+.vivienda__content-heading {
   font-size: 20px;
   color: var(--white);
 }
 
-.vivienda-contenido p {
+.vivienda__content-text {
   font-size: 20px;
   color: var(--white);
 }
 
-.vivienda-contenedor img {
+.vivienda__image {
   width: 50%;
   height: 600px;
   border-radius: 20px;
 }
-/* fin vivienda */
 
-/* inicio clientes */
+/* Clientes */
 .clientes {
   width: 100%;
   height: 900px;
@@ -464,12 +458,12 @@ main img {
   justify-content: center;
 }
 
-.clientes h1 {
+.clientes__title {
   font-size: 40px;
   color: var(--green);
 }
 
-.clientes-contenedor {
+.clientes__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -477,7 +471,7 @@ main img {
   height: 70%;
 }
 
-.comentarios {
+.clientes__comment {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,32 +484,25 @@ main img {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.comentarios p {
+.clientes__comment-text {
   width: 80%;
   font-size: 17px;
   color: var(--white);
   text-align: justify;
 }
 
-.comentarios h2 {
+.clientes__comment-author {
   font-size: 20px;
   color: var(--white);
 }
 
-.comentarios img {
+.clientes__comment-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
-.comentarios img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-/* fin clientes */
-
-/* inicio inversiones */
+/* Inversiones */
 .inversiones {
   width: 100%;
   height: 600px;
@@ -526,12 +513,12 @@ main img {
   background-color: rgba(83, 116, 89, 0.3);
 }
 
-.inversiones h1 {
+.inversiones__title {
   font-size: 30px;
   color: var(--green);
 }
 
-.inversiones-contenedor {
+.inversiones__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -539,7 +526,7 @@ main img {
   height: 80%;
 }
 
-.inversiones-cartas {
+.inversiones__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -551,33 +538,31 @@ main img {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.inversiones-cartas:nth-child(1) {
-  background-color: var(--green); 
+.inversiones__card--primary {
+  background-color: var(--green);
 }
 
-.inversiones-cartas:nth-child(2) {
-  background-color: var(--green-light); 
+.inversiones__card--secondary {
+  background-color: var(--green-light);
 }
 
-.inversiones-cartas:nth-child(3) {
+.inversiones__card--tertiary {
   background-color: #A1B9A3;
 }
 
-.inversiones-cartas h2 {
+.inversiones__card-title {
   font-size: 40px;
   color: var(--white);
 }
 
-.inversiones-cartas p {
+.inversiones__card-text {
   font-size: 16px;
   color: var(--white);
   width: 80%;
   text-align: center;
 }
-/* fin inversiones */
 
-/* inicio info */
-
+/* Info */
 .info {
   width: 100%;
   height: 1300px;
@@ -586,7 +571,7 @@ main img {
   align-items: center;
 }
 
-.sucursales-contenedor {
+.info__branches-container {
   display: flex;
   width: 80%;
   height: 50%;
@@ -594,14 +579,14 @@ main img {
   gap: 50px;
 }
 
-.sucursales-contenedor img {
+.info__branches-image {
   width: 50%;
   height: 500px;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.sucursales-contenido {
+.info__branches-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -611,26 +596,26 @@ main img {
   height: 100%;
 }
 
-.sucursales-contenido h1 {
+.info__branches-title {
   font-size: 25px;
   text-align: center;
   color: var(--green);
 }
 
-.sucursales-contenido p {
+.info__branches-text {
   font-size: 20px;
   text-align: justify;
   color: var(--black);
-} 
+}
 
-.sucursales-buttons {
+.info__branches-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.sucursales-buttons button:nth-child(1) {
+.info__branches-button--primary {
   width: 200px;
   height: 40px;
   color: var(--white);
@@ -640,7 +625,7 @@ main img {
   border-radius: 10px;
 }
 
-.sucursales-buttons button:nth-child(2) {
+.info__branches-button--secondary {
   width: 200px;
   height: 40px;
   color: var(--green);
@@ -650,7 +635,7 @@ main img {
   border-radius: 10px;
 }
 
-.contacto {
+.info__contact {
   display: flex;
   width: 80%;
   height: 50%;
@@ -658,14 +643,14 @@ main img {
   gap: 50px;
 }
 
-.contacto img {
+.info__contact-image {
   width: 50%;
   height: 500px;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.contacto-form {
+.info__contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -675,13 +660,13 @@ main img {
   height: 100%;
 }
 
-.contacto-form h1 {
+.info__contact-title {
   font-size: 25px;
   text-align: center;
   color: var(--green);
 }
 
-fieldset {
+.info__contact-fieldset {
   width: 90%;
   height: 60%;
   display: flex;
@@ -692,30 +677,30 @@ fieldset {
   gap: 15px;
 }
 
-.contacto-form input {
+.info__contact-input {
   width: 100%;
   border: solid 1px transparent;
   border-bottom: solid 1px;
 }
 
-.contacto-form textarea {
+.info__contact-textarea {
   width: 100%;
   height: 100px;
   border: solid 1px transparent;
   border-bottom: solid 1px;
 }
 
-.contacto-check {
+.info__contact-check {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.contacto-check input {
+.info__contact-check-input {
   width: 20px;
 }
 
-.enviar-button {
+.info__contact-submit {
   width: 100%;
   height: 40px;
   color: var(--white);
@@ -724,83 +709,140 @@ fieldset {
   border: none;
   border-radius: 10px;
 }
-/* fin info */
 
-/* inicio footer */
+/* Footer */
 
-footer {
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: #333;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer__links-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer__links-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.footer__links-item {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer__links-item:hover {
+  text-decoration: underline;
+}
+
+.footer__divider {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer__social-logo-title {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* .footer {
   width: 100%;
   height: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--black);
+  background-color: var(--green);
 }
 
-.footer-enlaces {
+.footer__links {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  height: 50%;
-  gap: 20px;
-}
-
-.contenedor-enlaces {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: 230px;
   gap: 3px;
 }
 
-.contenedor-enlaces h1 {
+.footer__links-title {
   font-size: 20px;
   color: var(--white);
-  margin-bottom: 20px;
 }
 
-.contenedor-enlaces a {
-  font-size: 13px;
+.footer__links-item {
   color: var(--white);
 }
 
-hr {
+.footer__divider {
   width: 90%;
   border: 1px solid var(--white);
 }
 
-.footer-redes {
+.footer__social {
   display: flex;
-  width: 90%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
-.footer-redes img {
-  width: 30px;
-  height: 30px;
-}
-
-.footer-logo {
+.footer__social-logo {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.footer-logo img {
+.footer__social-logo img {
   width: 50px;
   height: 50px;
 }
 
-.footer-logo h1 {
+.footer__social-logo-title {
   font-size: 20px;
   color: var(--white);
 }
+
+.footer__social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-icon {
+  width: 30px;
+  height: 30px;
+} */
 /* fin footer */
