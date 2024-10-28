@@ -1,143 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crea tu cuenta</title>
-    <link rel="stylesheet" href="../css/clientes.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="../css/clientes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="public/img/shape-303.png" alt="Green Bank logo" />
+        <h1>Green Bank</h1>
+      </div>
 
-        <Div class="div-logo">
-            <img src="../img/imgclientes/logo.jpeg" alt="">
-            <h2 class="Green-banck">Banco verde</h2>
-        </Div>
+      <div class="header__links">
+        <a href="public/pages/personas2.html" class="header__link">PERSONAS</a>
+        <a href="public/pages/personas.html" class="header__link">EMPRESAS</a>
+      </div>
 
-        <nav>
-            <a class="personas" href="">PERSONAS</a>
-            <a class="empresas">EMPRESAS</a>
-        </nav>
-
-        
-        <div class="buscador">
-            <input type="text" placeholde="buscar">
-            <i class="fas fa-search"></i>
-        </div>
-        
-       
-        <button class="inicio-sesion">INICIAR SESIÓN</button> 
-        
-
-        <img class="menu" src="../img/imgclientes/menu.png" alt="menu">
-
+      <section class="header__navbar">
+        <input type="search" value="Buscar" class="header__navbar-input" />
+        <button class="header__navbar-button">
+          <a href="public/pages/inicio-sesion.html">INICIAR SESIÓN</a>
+        </button>
+      </section>
     </header>
 
-    <main>
-        <section class="informacion-uno">
-            <h5 class="bienvenidos">Bienvenidos.</h5>
-            <h1 class="hazte-cliente">Hazte cliente de Green Bank y ve el mundo lleno de posibilidades.</h1>
-        </section>
-
-        <img class="imgen-uno" src="../img/imgclientes/img-inicio.jpg" alt="">
+    <main class="main">
+      <section class="main__section">
+        <div class="main__info">
+          <h1 class="main__welcome">Bienvenidos.</h1>
+          <p class="main__title">
+            Hazte cliente de Green Bank y ve el mundo lleno de posibilidades.
+          </p>
+        </div>
+        <img
+          class="main__image"
+          src="../img/imgclientes/img-inicio.jpg"
+          alt="Imagen de inicio"
+        />
+      </section>
     </main>
 
-    <article>
+    <article class="article">
+      <section class="article__text">
+        <p class="article__text-title">
+          Tus oportunidades empiezan abriendo cualquiera de estos productos.
+        </p>
 
-        <section class="texto">
-            <h1 class="texto-principal">Tus oportunidades empiezan abriendo cualquiera de estos productos.</h1>
-        </section>
+        <p />
+      </section>
 
-        <section class="productos">
+      <section class="article__products">
+        <div class="product product--savings">
+          <!-- <img
+            class="product__image"
+            src="../img/imgclientes/img-ahorro.png"
+            alt="Imagen de ahorro"
+          /> -->
+          <h2 class="product__title">Solicita tu cuenta de ahorro</h2>
+          <p class="product__description">
+            Si buscas una manera de administrar tu dinero y estás para mantener
+            a la vista solicita una cuenta de ahorros en línea
+          </p>
+          <button class="product__button">Crear cuenta ahorro</button>
+        </div>
 
-            <div class="ahorro">
-                <img class="imagen-ahorro" src= "../img/imgclientes/img-ahorro.png" alt="">
-                
-
-                <h2 class="titulo-ahorro">Solicita tu cuenta de ahorro</h2>
-
-                <p class="parrafo-ahorro">Si buscas una manera de administrar tu dinero y estás para mantener a la vista 
-                    solicita una cuenta de ahorros en línea
-                </p>
-
-                <div class="div-ahorro">
-                    <button class="boton-ahorro">crear cuenta ahorro</button>
-                </div>
-
-                
-            </div>
-
-            <div class="nomina">
-                <img class="imagen-nomina" src="../img/imgclientes/img-cuenta-nomina.png" alt="">
-
-                <h2 class="titulo-nomina">Solicita tu cuenta nomina</h2>
-
-                <p class="texto-nomina">Si buscas una manera sencilla y fácil de recibir los pagos de tu empresa solicita 
-                    una cuenta nomina en línea
-                </p>
-
-                <div class="div-nomina">
-                    <button class="boton-nomina">Crear cuenta nomina</button>
-                </div>
-            </div>
-        </section>
+        <div class="product product--payroll">
+          <!-- <img
+            class="product__image"
+            src="../img/imgclientes/img-cuenta-nomina.png"
+            alt="Imagen de nómina"
+          /> -->
+          <h2 class="product__title">Solicita tu cuenta nómina</h2>
+          <p class="product__description">
+            Si buscas una manera sencilla y fácil de recibir los pagos de tu
+            empresa solicita una cuenta nómina en línea
+          </p>
+          <button class="product__button">Crear cuenta nómina</button>
+        </div>
+      </section>
     </article>
 
-    <section class="Tarjeta">
-        <Div class="informacion-tarjeta">
-            <h1 class="titulo-tarjeta">Tarjeta de crédito</h1>
-            <p class="parrafo-tarjeta">
-            Si lo que buscas es comprar en línea más seguro y acumular Punto, 
+    <section class="card">
+      <section class="card__content">
+        <div class="card__info">
+          <h1 class="card__title">Tarjeta de crédito</h1>
+          <p class="card__description">
+            Si lo que buscas es comprar en línea más seguro y acumular puntos
             para canjear en cientos de comercios aliados. ¡Esta es la tuya!
-            </p>
-            <button class="boton-tarejta">MÁS INFORMACIÓN</button>
-        </Div>
-
-        <div class="imagen-taerjte-contenedor">
-            <img class="imagen-tarjeta" src="../img/imgclientes/img-tarjeta.jpeg" alt="">
+          </p>
+          <button class="card__button">MÁS INFORMACIÓN</button>
         </div>
+
+        <img
+          class="card__image"
+          src="/public/img2/img-tarjeta.jpeg"
+          alt="Imagen de tarjeta de crédito"
+        />
+      </section>
     </section>
 
-    <footer class="Pie-pagina">
-        
-        <section class="nav-pie-pag">
-            <div>
-                <h1>Beneficios</h1>
-                <a href="">Alianzas Green Bank</a>
-                <a href="">Programa de fidelizacion</a>
-                <a href="">Asistencias</a>
-            </div>
-            <div>
-                <h1>Atencion al Cliente</h1>
-                <a href="">¿Necesitas ayuda?</a>
-                <a href="">Canales de atención</a>
-                <a href="">Protección al consumidor</a>
-                <a href="">Seguridad bancaria</a>
-                <a href="">Autogestión</a>
-            </div>
-            <div>
-                <h1>Contacto</h1>
-                <a href="">Servilíneas</a>
-                <a href="">Oficinas</a>
-                <a href="">WhatsApp</a>
-            </div>
-        </section>
-        <section class="redes-pie-pag">
-            <div class="logo">
-                <img src="../img/imgclientes/logo-pie-pagina.png" alt="Green Bank logo">
-                <h1>Green Bank</h1>
-            </div>
-            <div class="red-social-pie-pag">
-                <img src="../img/imgclientes/whatsapp.png" alt="">
-                <img src="../img/imgclientes/instagram.png" alt="">
-                <img src="../img/imgclientes/youtube.png" alt="">
-                <img src="../img/imgclientes/linkedin.png" alt="">
-            </div>
-        </section>
+    <footer class="footer">
+      <section class="footer__links">
+        <div class="footer__links-column">
+          <h1 class="footer__links-title">Beneficios</h1>
+          <a href="" class="footer__links-item">Alianzas Green Bank</a>
+          <a href="" class="footer__links-item">Programa de fidelización</a>
+          <a href="" class="footer__links-item">Asistencias</a>
+        </div>
+        <div class="footer__links-column">
+          <h1 class="footer__links-title">Atención al Cliente</h1>
+          <a
+            href="public/pages/servicio-cliente.html"
+            class="footer__links-item"
+            >¿Necesitas ayuda?</a
+          >
+          <a href="" class="footer__links-item">Canales de atención</a>
+          <a href="" class="footer__links-item">Protección al consumidor</a>
+          <a href="" class="footer__links-item">Seguridad bancaria</a>
+          <a href="" class="footer__links-item">Autogestión</a>
+        </div>
+        <div class="footer__links-column">
+          <h1 class="footer__links-title">Contacto</h1>
+          <a href="" class="footer__links-item">Servilíneas</a>
+          <a href="" class="footer__links-item">Oficinas</a>
+          <a href="" class="footer__links-item">WhatsApp</a>
+        </div>
+      </section>
+      <hr class="footer__divider" />
+      <section class="footer__social">
+        <div class="footer__social-logo">
+          <img src="public/img/shape-30.png" alt="Green Bank logo" />
+          <h1 class="footer__social-logo-title">Green Bank</h1>
+        </div>
+        <div class="footer__social-icons">
+          <img
+            src="public/img/whatsapp.png"
+            alt="WhatsApp"
+            class="footer__social-icon"
+          />
+          <img
+            src="public/img/instagram.png"
+            alt="Instagram"
+            class="footer__social-icon"
+          />
+          <img
+            src="public/img/youtube.png"
+            alt="YouTube"
+            class="footer__social-icon"
+          />
+          <img
+            src="public/img/linkedin.png"
+            alt="LinkedIn"
+            class="footer__social-icon"
+          />
+        </div>
+      </section>
     </footer>
-
-    
-
-</body>
+  </body>
 </html>
