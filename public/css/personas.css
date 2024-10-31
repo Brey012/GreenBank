@@ -191,6 +191,21 @@ body {
   justify-content: space-evenly;
 }
 
+.articleProducto {
+  width: 80%x;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.articleProducto img {
+  width: 300px;
+  height: 300px;
+}
+
 .articleProducto a {
   display: flex;
   flex-direction: column;
@@ -329,280 +344,29 @@ iframe {
 }
 
 /* Contenido principal pagina uno */
-.mainUno {
-  width: 100%;
-  height: 905px;
-  background-color: #537459;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-.mainUno section {
-  width: 50%;
-  height: 905px;
-}
-.mainUno section img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-.titulo-main-img {
-  font-size: 50px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  margin-left: 50px;
-  position: relative;
-  bottom: 700px;
-  z-index: 2;
-}
-.subtitulo-main-img {
-  width: 40%;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  margin-left: 50px;
-  position: relative;
-  bottom: 700px;
-  z-index: 2;
-}
-.invertir-ahora {
-  width: 271px;
-  height: 85px;
-  background-color: white;
-  color: #537459;
-  border: solid 1px #537459;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 700;
-  margin-left: 50px;
-  position: relative;
-  bottom: 600px;
-  z-index: 2;
-}
-.textoMain {
-  width: 50%;
-}
-.titulo {
-  width: 70%;
-  font-size: 50px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-  margin-left: 50px;
-  position: relative;
-  top: 195px;
-}
-.textoMain div {
-  width: 60%;
-  height: 30%;
-  position: relative;
-  left: 20%;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.input-empresa {
-  width: 352px;
-  height: 44px;
-  background-color: white;
-  color: black;
-  border: solid 1px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-.AbrirCuenta {
-  width: 275px;
-  height: 86px;
-  background-color: white;
-  color: black;
-  border: solid 1px black;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 700;
-  margin-left: 40px;
-}
-/* pagina dos empresas */
-.pag-2-empresas {
-  width: 100%;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  border: solid 1px black;
-}
-.pag-2-empresas h1 {
-  width: 40%;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  position: relative;
-  right: 150px;
-}
-.iconos-servicios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 150px;
-}
-.iconos-servicios a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Monserrat", sans-serif;
-  color: #537459;
-  font-weight: 700;
-  font-size: 20px;
-  text-decoration: none;
-}
-.icono {
-  width: 180px;
-  height: 180px;
-  margin-bottom: 50px;
-}
 
-/* Pagina tres empresas*/
-.pag-3-empresas {
-  width: 100%;
-  height: 600px;
-  background-color: #537459;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.pag-3-empresas section img {
-  position: relative;
-  left: 100px;
-  top: 100px;
-}
-.texto-pag-3 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-.texto-pag-3 h1 {
-  font-family: "Monserrat", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  text-align: center;
-}
-.texto-pag-3 p {
-  width: 60%;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-}
-.boton-saber-mas {
-  width: 205px;
-  height: 86px;
-  background-color: white;
-  color: black;
-  border: solid 1px transparent;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 60px;
-}
-/* Pagina cuatro empresas */
-.pag-4 {
-  width: 100%;
-  height: 850px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: solid 1px white;
-}
-.pag-4 div {
-  width: 100%;
-  height: 40%;
-  background-color: #537459;
-  position: absolute;
-  z-index: 1;
-}
-.pag-4 iframe {
-  width: 1000px;
-  height: 70%;
-  border-radius: 15px;
-  position: relative;
-  top: 97px;
-  z-index: 2;
-}
-.pag-4 section {
-  width: 513px;
-  height: 330px;
-  background-color: white;
-  border: solid 1px transparent;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
-  gap: 30px;
-  position: relative;
-  bottom: 150px;
-  right: 270px;
-  z-index: 3;
-}
-.pag-4 section h2 {
-  width: 60%;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  text-align: left;
-  margin-right: 100px;
-}
-.pag-4 section p {
-  width: 80%;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
-  text-align: justify;
-  margin: 0 20px 0 20px;
-}
-.pag-4 section a {
-  text-decoration: none;
-  color: #537459;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-}
-.pag-4 section a img {
-  width: 25px;
-  height: 25px;
-}
 /* pagina cinco empresas */
-.pag-5-empresas {
+.paginaAtencion {
   width: 100%;
   height: 900px;
 }
-.fondo-verde {
+.fondoVerde {
   width: 100%;
   height: 50%;
-  background-color: #537459;
+  background-color: var(--green);
 }
-.fondo-blanco {
+.fondoBlanco {
   width: 100%;
   height: 50%;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-.fondo-verde h1 {
-  color: white;
-  font-family: "Monserrat", sans-serif;
+.fondoVerde h1 {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 50px;
   text-align: left;
@@ -610,7 +374,7 @@ iframe {
   top: 100px;
   left: 150px;
 }
-.contenedor-pag-5 {
+.contenedorAtencion {
   width: 80%;
   height: 320px;
   border: solid 1px grey;
@@ -625,11 +389,11 @@ iframe {
   bottom: 310px;
   left: 140px;
 }
-.contenedor-pag-5 img {
+.contenedorAtencion img {
   width: 100px;
   height: 100px;
 }
-.contenedor-pag-5-abajo {
+.contenedorAtencionAbajo {
   width: 80%;
   height: 320px;
   border: solid 1px grey;
@@ -646,59 +410,84 @@ iframe {
 }
 
 /* Pie de pagina*/
-.Pie-pagina {
+.footer {
   width: 100%;
-  height: 432px;
-  background-color: black;
-  color: white;
+  height: 400px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.nav-pie-pag {
-  width: 100%;
-  height: 229px;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  margin-top: 60px;
+  flex-direction: column;
+  background-color: var(--black);
 }
-.nav-pie-pag div {
-  width: 30%;
-  height: 100%;
+
+.footer__links {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.footer__links-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-content: space-evenly;
-  text-align: left;
-  padding-bottom: 50px;
-  border-bottom: solid 1px white;
-}
-.nav-pie-pag h1 {
+  gap: 10px;
+}	
+
+.footer__links-title {
   font-size: 20px;
-  font-weight: 700;
-  font-family: "Monserrat", sans-serif;
-  margin-bottom: 30px;
+  color: var(--white);
+  text-align: center;
 }
-.nav-pie-pag a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Monserrat", sans-serif;
+
+.footer__links-item {
+  font-size: 16px;
+  color: var(--white);
+  text-align: center;
 }
-.redes-pie-pag {
-  width: 90%;
-  height: 90%;
-  align-items: first baseline;
+
+.footer__divider {
+  width: 80%;
+  height: 1px;
+  background-color: var(--white);
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  width: 100%;
+  height: 10%;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
-.red-social-pie-pag {
+
+.footer__social-icons {
   display: flex;
   gap: 20px;
 }
-.red-social-pie-pag img {
-  width: 30px;
-  height: 30px;
+
+.footer__social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social-logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.footer__social-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__social-logo-title {
+  font-size: 30px;
+  color: var(--white);
 }
