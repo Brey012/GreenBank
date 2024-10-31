@@ -13,7 +13,7 @@ header{
     justify-content: center;
     justify-content: space-between;
 }
-.logo{
+.header-logo{
     width: 30%;
     height: 64px;
     display: flex;
@@ -25,38 +25,38 @@ header{
     font-weight:700;
     font-family:'Monserrat', sans-serif;
 }
-.enlacesHeader{
+.header-enlacesHeader{
  display: flex;
  gap: 37px;
  font-weight: 700;
 }
-.enlaces{
+.header-enlacesHeader__enlaces{
     color:#537459;
     font-family:'Monserrat', sans-serif;
 }
-.formularioHeader{
+.header-formularioHeader{
     width:40%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.Buscar{
+.header-formularioHeader__buscar{
     width: 180px;
     height: 38px;
 }
-.inicioSesion{
+.header-formularioHeader__inicioSesion{
     width: 181px;
     height: 42px;
     background-color: #537459;
     color: white;
     border-radius:30px;
 }
-.imgMenu{
+.header-formularioHeader__menu-lateral--imgMenu{
     width: 24px;
     height: 32px;
 }
 
- .menu-lateral{
+ .header-formularioHeader__menu-lateral{
     position: relative;
     top: 0;
 } 
@@ -84,13 +84,15 @@ header{
 
 
 
+#menu {
+    display: none;
+}
 
 
 
 
 
-
-  .primer_main{
+  .primerMain{
     width: 100%;
     height: 600px;
     background-color: #6b856d;
@@ -105,7 +107,7 @@ header{
 
 }
 
-.text {
+.primerMain-text {
     max-width: 60%;
     font-size: 26px;
     position: relative;
@@ -116,12 +118,12 @@ header{
 }
 
 
-.textoh1{
+.primerMain-text__textoh1{
 
 
     color: white;
 }
-.parrafo{
+.primerMain-text__parrafo{
     max-width: 60%;
     position: relative;
     top: 30px;
@@ -131,16 +133,8 @@ header{
 
 
 
-.imagensita{
-    max-width: 50%;
-    height: 95%;
-    position: relative;
-    top: 15px;
 
-}
-
-
-.primer_boton{
+.primerMain-text__primerBoton{
     
     width: auto;
     height: 40px;
@@ -153,11 +147,13 @@ header{
 }
 
 
+.primerMain-imagensita{
+    max-width: 50%;
+    height: 95%;
+    position: relative;
+    top: 15px;
 
-
-
-
-
+}
 
 
 
@@ -172,7 +168,7 @@ header{
 
 /*ahora el main tarjetas*/
 
-.mainuno{
+.mainUno{
     width: 100%;
     background-color: #6b856d;
     color: white;
@@ -182,7 +178,7 @@ header{
    
 }
 
-.container {
+.mainUno-container {
     display: flex;
     
     width: 90%;
@@ -197,7 +193,7 @@ header{
 }
 
 /* Estilos para tarjetas */
-.card {
+.mainUno-container__card {
 
     width: 100%;
     flex: 1;
@@ -213,7 +209,7 @@ header{
     justify-content: space-between;
 }
 
-.card img {
+.mainUno-container__card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -224,7 +220,7 @@ header{
 
 /*formulario*/
 
-.maindos{
+.mainDos{
     width: 100%;
 
 
@@ -234,7 +230,7 @@ header{
 
 
 
-.formulacho {
+.mainDos-formulacho {
     display: flex;
     width: 100%;
     height: 793px;
@@ -246,7 +242,7 @@ header{
     color: black; /* Color del texto */
 }
 
-.text-left {
+.mainDos-formulacho__textLeft {
     flex: 1;
     padding-right: 50px; /* Aumenta el espacio a la derecha */
     display: flex;
@@ -257,7 +253,14 @@ header{
     
 }
 
-.steps {
+.mainDos-formulacho__textLeft--tres {
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    top: -200px;
+}
+
+.mainDos-formulacho__steps {
     width: 400px;
     height: 400px;
     
@@ -269,7 +272,7 @@ header{
     right: 100px;
 }
 
-.step1 {
+.mainDos-formulacho__steps--step1 {
     width: 250px;
     height: 250px;
     background-color: #6b856d;
@@ -280,7 +283,7 @@ header{
    
 }
 
-.step2 {
+.mainDos-formulacho__steps--step2 {
    width: 250px;
     height: 250px;
     background-color: #6b856d;
@@ -295,7 +298,7 @@ header{
 
 
 
-.step3 {
+.mainDos-formulacho__steps--step3 {
    width: 250px;
     height: 250px;
     background-color: #6b856d;
@@ -306,7 +309,7 @@ header{
 
 }
 
-.step4 {
+.mainDos-formulacho__steps--step4 {
     width: 250px ;
     height: 250px;
     background-color: #6b856d;
@@ -351,10 +354,5 @@ p {
 .steps .last-step {
     grid-column: span 2; /* El cuarto paso ocupa las dos columnas */
 }
-.tres {
-    font-size: 50px;
-    display: flex;
-    position: relative;
-    top: -200px;
-}
+
 
