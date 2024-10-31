@@ -1,218 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Green Bank</title>
-    <link rel="stylesheet" href="public/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
     <!-- encabezado-->
-    <header>
-        <div class="logo">
-        <img src="public/img/shape-303.png" alt="Green Bank logo">
+    <header class="header">
+      <div class="header__logo">
+        <img src="public/img/shape-303.png" alt="Green Bank logo" />
         <h1>Green Bank</h1>
-        </div>
-        <div class="enlacesHeader">
-        <a href="public/pages/personas2.html" class="enlaces">PERSONAS</a>
-        <a href="public/pages/personas.html" class="enlaces">EMPRESAS</a>
-        </div>
-        <div class="formularioHeader">
-            <form action="">
-                <img src="" alt="">
-                <input type="search" value="Buscar" class="Buscar">
-            </form>
-            <a class="inicioSesion" href="public/pages/inicio-sesion.html">INICIAR SESIÓN</a>
-            <form class="menu-lateral" action="">
-                <label for="manu"><img class="imgMenu" src="public/img/menu-hamburguesa.png" alt=""></label>
-                <input id="menu" type="checkbox">
-                <nav>
-                    <!-- <a href="">Sobre nostros</a>
-                    <a href="">Pagina de inicio</a>
-                    <a href="">Personas</a>
-                    <a href="">Empresas</a> -->
-                </nav>
-            </form>
-        </div>
+      </div>
+
+      <div class="header__links">
+        <a href="public/pages/personas2.html" class="header__link">PERSONAS</a>
+        <a href="public/pages/personas.html" class="header__link">EMPRESAS</a>
+      </div>
+
+      <section class="header__navbar">
+        <input type="search" value="Buscar" class="header__navbar-input" />
+        <button class="header__navbar-button">
+          <a href="public/pages/inicio-sesion.html">INICIAR SESIÓN</a>
+        </button>
+      </section>
     </header>
-    <!-- pagina uno-->
-    <div class="mainUno">
-        <img src="public/img/hand-putting-coin-piggy-bank-growth-chart.jpg" alt="" class="imgMainUno">
-        <section class="textoMain">
-        <p class="subtitulo">NOSOTROS LO HACEMOS POR TI​</p>
-        <h2 class="titulo">Gestiona tu dinero de manera sencilla e intuitiva</h2>
-        <p class="parrafo">Duis aute irure dolor in reprehenderit in voluptate 
-            velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <div class="Servicios">
-            <a href="" class="servicioLink"><img src="public/img/shape-30.png" alt=""> Descarga la App</a>
-            <a href="" class="servicioLink"><img src="public/img/shape-30.png" alt=""> Recibe tu Tarjeta</a>
+
+    <!-- inicio main-->
+    <main class="main">
+      <img src="public/img/main.jpg" alt="" class="main__image" />
+      <section class="main__container">
+        <div class="main__content">
+          <h2 class="main__content-title">NOSOTROS LO HACEMOS POR TI​</h2>
+          <h1 class="main__content-heading">
+            Gestiona tu dinero de manera sencilla e intuitiva
+          </h1>
+          <p class="main__content-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
         </div>
-        <div class="Servicios">
-            <a href="" class="servicioLink"><img src="public/img/shape-30.png" alt=""> Verifica tu identidad</a>
-            <a href="" class="servicioLink"><img src="public/img/shape-30.png" alt=""> Disfruta ser Green</a>
-        </div>    
-        <a class="AbrirCuenta" href="public/pages/clientes.html">ABRIR CUENTA GRATUITA</a>
+        <div class="main__services">
+          <div class="main__links">
+            <div class="main__logo">
+              <img src="public/img/shape-30.png" alt="Green Bank logo" />
+              <a href="">Descarga la App</a>
+            </div>
+
+            <div class="main__logo">
+              <img src="public/img/shape-30.png" alt="Green Bank logo" />
+              <a href="">Recibe tu Tarjeta</a>
+            </div>
+          </div>
+
+          <div class="main__links">
+            <div class="main__logo">
+              <img src="public/img/shape-30.png" alt="Green Bank logo" />
+              <a href="">Verifica tu identidad</a>
+            </div>
+
+            <div class="main__logo">
+              <img src="public/img/shape-30.png" alt="Green Bank logo" />
+              <a href="">Disfruta ser Green</a>
+            </div>
+          </div>
+        </div>
+        <button class="main__button">
+          <a href="public/pages/clientes.html">ABRIR CUENTA GRATUITA</a>
+        </button>
+      </section>
+    </main>
+    <!-- fin main -->
+
+    <!-- inicio productos-->
+    <section class="productos">
+      <h1 class="productos__title">¿Que necesitas hoy?</h1>
+      <section class="productos__container">
+        <section class="productos__content">
+          <div class="productos__item">
+            <div class="productos__icon">
+              <img src="public/img/banca-en-linea.png" alt="Tarjeta" />
+            </div>
+            <p class="productos__item-text">Necesito una tarjeta</p>
+          </div>
+          <div class="productos__item">
+            <div class="productos__icon">
+              <img src="public/img/tarjeta-de-debito.png" alt="Tarjeta" />
+            </div>
+            <p class="productos__item-text">Quiero una tarjeta</p>
+          </div>
+          <div class="productos__item">
+            <div class="productos__icon">
+              <img src="public/img/pago-movil1.png" alt="Pagar y recargar" />
+            </div>
+            <p class="productos__item-text">Quiero pagar y recargar</p>
+          </div>
+          <div class="productos__item">
+            <div class="productos__icon">
+              <img src="public/img/pago-movil.png" alt="Préstamo" />
+            </div>
+            <p class="productos__item-text">Necesito un préstamo</p>
+          </div>
+          <div class="productos__item">
+            <div class="productos__icon">
+              <img src="public/img/pago-en-linea.png" alt="Invertir" />
+            </div>
+            <p class="productos__item-text">Quiero invertir</p>
+          </div>
         </section>
-    </div>
-    <!-- pagina dos-->
-    <section class="pag-2">
-            <h1>¿Que necesitas hoy?</h1>
-            <section class="iconos-servicios">
-                <div class="img-pag-2">
-                    <a href=""><img  class="icono" src="public/img/banca-en-linea.png" alt="">Necesito una cuenta</a>
-                    <a href=""> <img class="icono" src="public/img/tarjeta-de-debito.png" alt="">Quiero una tarjeta</a>
-                    <a href=""><img class="icono" src="public/img/pago-movil1.png" alt="">Quiero pagar y recargar</a>
-                </div>
-                <div class="img-pag-2">
-                    <a href=""><img class="icono" src="public/img/pago-movil.png" alt="">Necesito un prestamo</a>
-                    <a href=""><img class="icono" src="public/img/pago-en-linea.png" alt="">Quiero Invertir</a>
-                </div>
-                <img class="img-grande-pag-2" src="public/img/ddd-min.png" alt=""> 
-            </section>
+        <img class="productos__image" src="public/img/ddd-min.png" alt="" />
+      </section>
     </section>
-    <!-- pagina tres -->
-     <div class="pag-3">
-        <section><img src="public/img/empresario-com-cartao-de-visita-com-espaco-de-copia-empresario-segurando-o-cartao-de-visita_474717-976.png" alt=""></section>
-        <section class="texto-pag-3">
-            <h1>​Estás a pocos pasos de estrenar tu tarjeta Verde</h1>
-            <p>Texto de muestra. Haga clic para seleccionar el cuadro de texto. Haga clic nuevamente o doble clic para comenzar a editar el texto.</p>
-            <div>
-                <a class="boton-tarjeta-1">TARJETA DE DÉBITO</a>
-                <a  class="boton-tarjeta-2" href="public/pages/tarjeta-credito.html">TARJETA DE CRÉDITO</a>
-            </div>
-        </section>
-     </div>
-     <!-- pagina cuatro-->
-      <section class="pag-4">
-        <div></div>
-        <img src="public/img/rytyy.jpg" alt="">
-            <section>
-                <h2>Avanza con tu empresa hoy</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque autem, nostrum quam incidunt quis nam cupiditate repellendus, ex suscipit veniam</p>
-                <a href="public/pages/personas.html">QUIERO HACERLO</a>
-            </section>
-      </section>
-      <!-- paguna cinco-->
-       <section class="pag-5">
-        <div class="texto-pag-5">
-            <h1>​​​Financiamos la compra de tu vivienda nueva o usada</h1>
-            <h2>hasta 80% Hasta 70% </h2>
-            <h2>VIS* NO VIS*</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eius aliquid doloribus quas sapiente consectetur illo.</p>
-            <h2>Crédito Hipotecario VIS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eius aliquid doloribus quas sapiente consectetur illo.</p>
-            <h2>Arrendamiento Habitacional</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eius aliquid doloribus quas sapiente consectetur illo.</p>
-        </div>
-        <div class="img-pag-5">
-            <img src="public/img/loiuytf.jpg" alt="">
-        </div>
-       </section>
-       <!-- pagina seis-->
-        <section class="pag-6">
-            <div class="mitad-pag-6">
-                <h1>​Que dicen nuestros clientes</h1>
-            </div>
-            <div class="contenedor-coment-pag-6">
-             <section class="comentario-pag-6">
-                <img class="viñeta-coment-pag-6" src="public/img/7350737.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam dolorem sint magnam totam nisi similique iure dignissimos. </p>
-                <img class="img-coment-pag-6" src="public/img/e.jpg" alt="">
-                <h2>DIEGO ESCOBAR</h2>
-             </section>  
-             <section class="comentario-pag-6">
-                <img class="viñeta-coment-pag-6"  src="public/img/7350737.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam dolorem sint magnam totam nisi similique iure dignissimos. </p>
-                <img class="img-coment-pag-6"  src="public/img/hgghgh.jpg" alt="">
-                <h2>FELIPE NIÑO</h2>
-             </section>   
-             <section class="comentario-pag-6">
-                <img class="viñeta-coment-pag-6"  src="public/img/7350737.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam dolorem sint magnam totam nisi similique iure dignissimos. </p>
-                <img class="img-coment-pag-6"  src="public/img/fgfg.jpg" alt="">
-                <h2>DAVID CHALA</h2>
-             </section>   
-            </div>
-        </section>
-        <!-- pagina siete-->
-     <section class="pag-7">
-        <div class="invertir-pag-7">
-            <Section class="cincuenta-pag-7"><h1>50%</h1><p>Invierte en acciones, ETFs ​desde 100mil con nuestros planes de inversión y genera una rentavilidad de hasta el 50%</p></Section>
-            <Section class="doscientos-pag-7"><h1>200</h1><p>¿Te interesan las criptomonedas? Tenemos más de 200 criptomonedas para elegir</p></Section>
-            <Section class="veinte-pag-7"><h1>20.000</h1><p>Fondo Digital Con solo $20.000 puedes abrir un fondo que te ayudará a cumplir tus mentas</p></Section>
-        </div>
-        <div class="acciones-pag-7">
-            <h1>INVIERTE EN ACCIONES, ETF'S Y CRIPTOMONEDAS</h1>
-        </div>
-     </section>
-     <!-- pagina ocho-->
-      <section class="pag-8">
-        <img src="public/img/erwrt345.jpg" alt="">
-        <div>
-            <h1>​​Encuentra aquí la ubicación de nuestras oficinas, cajeros y corresponsales bancarios del Green Bank a nivel nacional</h1>
-            <p>​Es el lugar donde recibiras asesoría y podrás consultar sobre tus productos green bank</p>
-            <div class="boton-pag-8">
-            <button class="buscar-pag-8">BUSCAR OFICINAS</button>
-            <button class="solicitar-pag-8">SOLICITAR TURNO</button>
-            </div>
+    <!-- Fin de productos -->
+
+    <!-- inicio tarjetas -->
+    <section class="tarjetas">
+      <img
+        src="public/img/empresario-com-cartao-de-visita-com-espaco-de-copia-empresario-segurando-o-cartao-de-visita_474717-976.png"
+        alt=""
+        class="tarjetas__image"
+      />
+      <section class="tarjetas__content">
+        <h1 class="tarjetas__title">
+          Estás a pocos pasos de estrenar tu tarjeta Verde
+        </h1>
+        <p class="tarjetas__text">
+          Texto de muestra. Haga clic para seleccionar el cuadro de texto. Haga
+          clic nuevamente o doble clic para comenzar a editar el texto.
+        </p>
+        <div class="tarjetas__buttons">
+          <button class="tarjetas__button">
+            <a href="#" class="tarjetas__button-link">TARJETA DE DÉBITO</a>
+          </button>
+          <button class="tarjetas__button">
+            <a
+              href="public/pages/tarjeta-credito.html"
+              class="tarjetas__button-link"
+              >TARJETA DE CRÉDITO</a
+            >
+          </button>
         </div>
       </section>
-      <!-- pagina nueve-->
-       <div class="pag-9">
-        <img src="public/img/Untitled-1.jpg" alt="">
-        <form action="" class="form-pag-9">
-            <label for="">CONTACTENOS</label>
-            <fieldset>
-            <span>Nombre</span>
-            <input type="text" value="Introduce tu nombre">
-            <span>Correo electrónico</span>
-            <input type="email" value="Introduzca una dirección de correo electrónico válida">
-            <span>Mensaje</span>
-            <textarea name="" id=""></textarea>
-            <div class="Check-pag-9">
-                <input type="checkbox">
-                <span>Acepto los terminos del servicio</span>
+    </section>
+    <!-- fin tarjetas -->
+
+    <!-- inicio empresa-->
+    <section class="empresa">
+      <div class="empresa__white"></div>
+      <section class="empresa__container">
+        <div class="empresa__content">
+          <h2 class="empresa__content-title">Avanza con tu empresa hoy</h2>
+          <p class="empresa__content-text">
+            Encuentra aquí lo que necesitas para lograrlo. Canales,
+            financiación, asesoría especializada, aliados y más
+          </p>
+          <button class="empresa__content-button">
+            <a href="public/pages/personas.html">QUIERO HACERLO</a>
+          </button>
+        </div>
+      </section>
+      <div class="empresa__green"></div>
+    </section>
+    <!-- fin empresa -->
+
+    <!-- inicio vivienda -->
+    <section class="vivienda">
+      <div class="vivienda__container">
+        <div class="vivienda__content">
+          <h1 class="vivienda__content-title">
+            Financiamos la compra de tu vivienda nueva o usada
+          </h1>
+          <h2 class="vivienda__content-subtitle">Hasta 80% Hasta 70%</h2>
+          <h3 class="vivienda__content-heading">VIS* NO VIS*</h3>
+          <p class="vivienda__content-text">
+            Del menor valor entre el avalúo comercial y el valor de la
+            compraventa establecido en la promesa
+          </p>
+          <h2 class="vivienda__content-subtitle">Crédito Hipotecario VIS</h2>
+          <p class="vivienda__content-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eius
+            aliquid doloribus quas sapiente consectetur illo.
+          </p>
+          <h2 class="vivienda__content-subtitle">Arrendamiento Habitacional</h2>
+          <p class="vivienda__content-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eius
+            aliquid doloribus quas sapiente consectetur illo.
+          </p>
+        </div>
+        <img src="public/img/loiuytf.jpg" alt="" class="vivienda__image" />
+      </div>
+    </section>
+    <!-- fin vivienda -->
+
+    <!-- inicio clientes -->
+    <section class="clientes">
+      <h1 class="clientes__title">Que dicen nuestros clientes</h1>
+      <section class="clientes__container">
+        <div class="clientes__comment">
+          <img
+            src="public/img/7350737.png"
+            alt=""
+            class="clientes__comment-image"
+          />
+          <p class="clientes__comment-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam
+            dolorem sint magnam totam nisi similique iure dignissimos.
+          </p>
+          <h2 class="clientes__comment-author">DIEGO ESCOBAR</h2>
+        </div>
+        <div class="clientes__comment">
+          <img
+            src="public/img/7350737.png"
+            alt=""
+            class="clientes__comment-image"
+          />
+          <p class="clientes__comment-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam
+            dolorem sint magnam totam nisi similique iure dignissimos.
+          </p>
+          <h2 class="clientes__comment-author">FELIPE NIÑO</h2>
+        </div>
+        <div class="clientes__comment">
+          <img
+            src="public/img/7350737.png"
+            alt=""
+            class="clientes__comment-image"
+          />
+          <p class="clientes__comment-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam
+            dolorem sint magnam totam nisi similique iure dignissimos.
+          </p>
+          <h2 class="clientes__comment-author">DAVID CHALA</h2>
+        </div>
+      </section>
+    </section>
+    <!-- fin clientes -->
+
+    <!-- inicio inversiones -->
+    <section class="inversiones">
+      <h1 class="inversiones__title">
+        INVIERTE EN ACCIONES, ETF'S Y CRIPTOMONEDAS
+      </h1>
+      <div class="inversiones__container">
+        <div class="inversiones__card inversiones__card--primary">
+          <h2 class="inversiones__card-title">50%</h2>
+          <p class="inversiones__card-text">
+            Invierte en acciones, ETFs desde 100mil con nuestros planes de
+            inversión y genera una rentabilidad de hasta el 50%
+          </p>
+        </div>
+        <div class="inversiones__card inversiones__card--secondary">
+          <h2 class="inversiones__card-title">200</h2>
+          <p class="inversiones__card-text">
+            ¿Te interesan las criptomonedas? Tenemos más de 200 criptomonedas
+            para elegir
+          </p>
+        </div>
+        <div class="inversiones__card inversiones__card--tertiary">
+          <h2 class="inversiones__card-title">20.000</h2>
+          <p class="inversiones__card-text">
+            Fondo Digital: Con solo $20.000 puedes abrir un fondo que te ayudará
+            a cumplir tus metas
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- fin inversiones -->
+
+    <!-- inicio info -->
+    <section class="info">
+      <div class="info__branches-container">
+        <div class="info__branches-content">
+          <h1 class="info__branches-title">
+            Encuentra aquí la ubicación de nuestras oficinas, cajeros y
+            corresponsales bancarios del Green Bank a nivel nacional
+          </h1>
+          <p class="info__branches-text">
+            Es el lugar donde recibirás asesoría y podrás consultar sobre tus
+            productos Green Bank.
+          </p>
+          <div class="info__branches-buttons">
+            <button class="info__branches-button--primary">
+              BUSCAR OFICINAS
+            </button>
+            <button class="info__branches-button--secondary">
+              SOLICITAR TURNO
+            </button>
+          </div>
+        </div>
+        <img
+          src="public/img/erwrt345.jpg"
+          alt="Ubicación de nuestras oficinas"
+          class="info__branches-image"
+        />
+      </div>
+
+      <div class="info__contact">
+        <img
+          src="public/img/Untitled-1.jpg"
+          alt="Formulario de contacto"
+          class="info__contact-image"
+        />
+        <form action="" class="info__contact-form">
+          <h1 class="info__contact-title">CONTÁCTENOS</h1>
+          <fieldset class="info__contact-fieldset">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Introduce tu nombre"
+              class="info__contact-input"
+            />
+
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Introduzca una dirección de correo electrónico válida"
+              class="info__contact-input"
+            />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              placeholder="Escribe tu mensaje aquí"
+              class="info__contact-textarea"
+            ></textarea>
+
+            <div class="info__contact-check">
+              <input type="checkbox" class="info__contact-check-input" />
+              <label for="terminos">Acepto los términos del servicio</label>
             </div>
-            <input class="boton-pag-9" type="submit" value="ENTREGAR">
-            </fieldset>
+
+            <input
+              class="info__contact-submit"
+              type="submit"
+              value="ENTREGAR"
+            />
+          </fieldset>
         </form>
-       </div>
-       <!-- Pie de pagina-->
-        <footer class="Pie-pagina">
-            <section class="nav-pie-pag">
-                <div>
-                    <h1>Beneficios</h1>
-                    <a href="">Alianzas Green Bank</a>
-                    <a href="">Programa de fidelizacion</a>
-                    <a href="">Asistencias</a>
-                </div>
-                <div>
-                    <h1>Atencion al Cliente</h1>
-                    <a href="public/pages/servicio-cliente.html">¿Necesitas ayuda?</a>
-                    <a href="">Canales de atención</a>
-                    <a href="">Protección al consumidor</a>
-                    <a href="">Seguridad bancaria</a>
-                    <a href="">Autogestión</a>
-                </div>
-                <div>
-                    <h1>Contacto</h1>
-                    <a href="">Servilíneas</a>
-                    <a href="">Oficinas</a>
-                    <a href="">WhatsApp</a>
-                </div>
-            </section>
-            <section class="redes-pie-pag">
-                <div class="logo">
-                    <img src="public/img/shape-30.png" alt="Green Bank logo">
-                    <h1>Green Bank</h1>
-                </div>
-                <div class="red-social-pie-pag">
-                    <img src="public/img/whatsapp.png" alt="">
-                    <img src="public/img/instagram.png" alt="">
-                    <img src="public/img/youtube.png" alt="">
-                    <img src="public/img/linkedin.png" alt="">
-                </div>
-            </section>
-        </footer>
-</body>
+      </div>
+    </section>
+    <!-- fin info -->
+
+    <!-- inicio footer -->
+
+    <footer class="footer">
+      <section class="footer__links">
+        <div class="footer__links-column">
+          <h1 class="footer__links-title">Beneficios</h1>
+          <a href="" class="footer__links-item">Alianzas Green Bank</a>
+          <a href="" class="footer__links-item">Programa de fidelización</a>
+          <a href="" class="footer__links-item">Asistencias</a>
+        </div>
+        <div class="footer__links-column">
+          <h1 class="footer__links-title">Atención al Cliente</h1>
+          <a
+            href="public/pages/servicio-cliente.html"
+            class="footer__links-item"
+            >¿Necesitas ayuda?</a
+          >
+          <a href="" class="footer__links-item">Canales de atención</a>
+          <a href="" class="footer__links-item">Protección al consumidor</a>
+          <a href="" class="footer__links-item">Seguridad bancaria</a>
+          <a href="" class="footer__links-item">Autogestión</a>
+        </div>
+        <div class="footer__links-column">
+          <h1 class="footer__links-title">Contacto</h1>
+          <a href="" class="footer__links-item">Servilíneas</a>
+          <a href="" class="footer__links-item">Oficinas</a>
+          <a href="" class="footer__links-item">WhatsApp</a>
+        </div>
+      </section>
+      <hr class="footer__divider" />
+      <section class="footer__social">
+        <div class="footer__social-logo">
+          <img src="public/img/shape-30.png" alt="Green Bank logo" />
+          <h1 class="footer__social-logo-title">Green Bank</h1>
+        </div>
+        <div class="footer__social-icons">
+          <img
+            src="public/img/whatsapp.png"
+            alt="WhatsApp"
+            class="footer__social-icon"
+          />
+          <img
+            src="public/img/instagram.png"
+            alt="Instagram"
+            class="footer__social-icon"
+          />
+          <img
+            src="public/img/youtube.png"
+            alt="YouTube"
+            class="footer__social-icon"
+          />
+          <img
+            src="public/img/linkedin.png"
+            alt="LinkedIn"
+            class="footer__social-icon"
+          />
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
