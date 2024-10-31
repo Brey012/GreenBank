@@ -30,7 +30,7 @@ header{
     justify-content: center;
     
 }
-.logo h1{
+.logoH1{
     font-size: 30px;
     font-weight:700;
     font-family:'Monserrat', sans-serif;
@@ -73,12 +73,12 @@ header{
     height: 32px;
 }
 
- .menu-lateral{
+ .menuLateral{
     position: relative;
     top: 0;
 
 } 
-.menu-lateral label{
+.menuLateralLabel{
     width: 100%;
     height: 45px;
     display: flex;
@@ -89,10 +89,10 @@ header{
     left: 0;
     cursor: pointer;
   }
-  .menu-lateral input {
+  .menuLateralInput {
     display: none;
   }
-  .menu-lateral nav{
+  .menuLateralNav{
     display: flex;
     flex-direction: column;
     /* width: 300px;
@@ -101,7 +101,7 @@ header{
     opacity: 0.8;
     border: solid 1px; */
   }
-  .menu-lateral input:checked~nav{
+  .menuLateralInput:checked~nav{
     width: 300px;
     height:1200px;
     background-color:black;
@@ -109,7 +109,7 @@ header{
   }
 
 /* main principal*/
-.primer_main{
+.primerMain{
     width: 100%;
     height: 500px;
     background-color: #6b856d;
@@ -155,7 +155,7 @@ header{
 
 
 
-.primer_boton{
+.primerBoton{
     
     width: auto;
     height: 40px;
@@ -170,7 +170,7 @@ header{
 
 /*slider*/
 
-.main_pequeño{
+.mainPequeño{
     width: 100%;
     height: 80px;
     display: flex;
@@ -210,7 +210,7 @@ header{
 /*main pequeño dos*/
 
 
-.main_pequeño_dos{
+.mainPequeñoDos{
 
     background-color:#6b856d;
     color: white;
@@ -229,7 +229,7 @@ header{
 
 
 
-.texto_mpq{
+.textoMpq{
     font-size:30px ;
     position: relative;
     left: 120px;
@@ -239,7 +239,7 @@ header{
 
 }
 
-.texto2_mpq{
+.texto2Mpq{
 
     position: relative;
 
@@ -274,7 +274,7 @@ header{
 
 
 
-.main_dos{
+.mainDos{
     
 
     width: 100%;
@@ -365,7 +365,7 @@ header{
 
 
 /* Pie de pagina*/
-.Pie-pagina{
+.PiePagina{
     width: 100%;
     height: 432px;
     background-color: black;
@@ -376,7 +376,7 @@ header{
     position: relative;
     bottom: 70px;
 }
-.nav-pie-pag{
+.navPiePag{
     width: 100%;
     height: 229px;
     display: flex;
@@ -384,7 +384,7 @@ header{
     justify-content: center;
     margin-top:60px;
 }
-.nav-pie-pag div{
+.navPiePag div{
     width: 30%;
     height: 100%;
     display: flex;
@@ -395,31 +395,31 @@ header{
     padding-bottom: 50px;
     border-bottom:solid 1px white;
 }
-.nav-pie-pag h1{
+.navPiePag h1{
     font-size:20px;
     font-weight:700;
     font-family:'Monserrat', sans-serif;
     margin-bottom: 30px;
 }
-.nav-pie-pag a{
+.navPiePag a{
     color: white;
     text-decoration:none;
     font-size:18px;
     font-weight:400;
     font-family:'Monserrat', sans-serif;
 }
-.redes-pie-pag{
+.redesPiePag{
     width:90%;
     height:90%;
     align-items: first baseline;
     display: flex;
     justify-content: space-between;
 }
-.red-social-pie-pag{
+.redSocialPiePag{
     display: flex;
     gap: 20px;
 }
-.red-social-pie-pag img{
+.redSocialPiePag img{
     width: 30px;
     height: 30px;
 }
@@ -471,7 +471,7 @@ button:hover {
 
 
 
-.button-container {
+.buttonContainer {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra el botón y la línea */
