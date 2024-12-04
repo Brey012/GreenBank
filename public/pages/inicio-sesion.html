@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iniciar sesión</title>
+    <title>Inicio Sesión - Green Bank</title>
     <link rel="stylesheet" href="../css/inicio-sesion.css" />
     <link
       rel="stylesheet"
@@ -13,19 +13,19 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="public/img/shape-303.png" alt="Green Bank logo" />
+        <img src="../img/shape-303.png" alt="Green Bank logo" />
         <h1>Green Bank</h1>
       </div>
 
       <div class="header__links">
-        <a href="public/pages/personas2.html" class="header__link">PERSONAS</a>
-        <a href="public/pages/personas.html" class="header__link">EMPRESAS</a>
+        <a href="personas2.html" class="header__link">PERSONAS</a>
+        <a href="personas.html" class="header__link">EMPRESAS</a>
       </div>
 
       <section class="header__navbar">
         <input type="search" value="Buscar" class="header__navbar-input" />
         <button class="header__navbar-button">
-          <a href="public/pages/inicio-sesion.html">INICIAR SESIÓN</a>
+          <a href="inicio-sesion.html">INICIAR SESIÓN</a>
         </button>
       </section>
     </header>
@@ -34,25 +34,36 @@
       <div class="contenedor__inicio">
         <h2 class="contenedor__titulo">Inicio Sesión</h2>
 
-        <section class="contenedor__input-contenedor">
-          <i class="contenedor__icon fas fa-envelope"></i>
-          <input class="contenedor__input" type="email" placeholder="Correo" />
-        </section>
+        <form id="loginForm" class="contenedor__form">
+          <section class="contenedor__input-contenedor">
+            <i class="contenedor__icon fas fa-envelope"></i>
+            <input
+              class="contenedor__input"
+              type="email"
+              id="email"
+              placeholder="Correo"
+              required
+            />
+          </section>
 
-        <section class="contenedor__input-contenedor">
-          <i class="contenedor__icon fas fa-lock"></i>
-          <input class="contenedor__input" type="password" placeholder="Contraseña" />
-        </section>
+          <section class="contenedor__input-contenedor">
+            <i class="contenedor__icon fas fa-lock"></i>
+            <input
+              class="contenedor__input"
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+              required
+            />
+          </section>
 
-        <button class="contenedor__button">Iniciar Sesión</button>
-
-        <div class="contenedor__registro">
-          <p class="contenedor__texto"></p>
-            ¿No tienes una cuenta?
-            <a class="contenedor__link" href="Registrarse.html">Registrate</a>
-          </p>
-        </div>
+          <button type="submit" class="contenedor__button">
+            Iniciar Sesión
+          </button>
+        </form>
       </div>
     </section>
+
+    <script type="module" src="../js/controlador.js"></script>
   </body>
 </html>

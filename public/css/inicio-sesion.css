@@ -102,6 +102,15 @@ body {
   border-radius: 30px;
 }
 
+.contenedor__form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .contenedor__titulo {
   font-size: 35px;
   font-weight: 700;
